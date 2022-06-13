@@ -18,6 +18,7 @@ def exception_handling(number1,number2,operator):
   except:
       return "Error: Operator must be '+' or '-'."
   return ""
+
 def arithmetic_arranger(problems,displayMode=False):
 
   start=True
@@ -28,6 +29,7 @@ def arithmetic_arranger(problems,displayMode=False):
       raise BaseException
   except :
     return "Error: Too many problems."
+    
   for prob in problems:
     separated_problem = prob.split()
     number1= separated_problem[0]
